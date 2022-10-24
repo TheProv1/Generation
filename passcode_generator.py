@@ -71,7 +71,7 @@ def passcode_6():
 			fobj.close()
 
 print("\t\t\t\tMain Menu\n")
-print("1. 4 Digit Passcodes Generation\n2. 6 Digit Passcodes Generation\n3. Both Passcodes Generation\n4. Exit")
+print("1. 4 Digit Passcode Generation\n2. 6 Digit Passcode Generation\n3. Both Types of Passcode Generation\n4. Exit")
 print()
 
 choice = int(input("Enter your choice: "))
