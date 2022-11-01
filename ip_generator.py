@@ -5,19 +5,19 @@ def IP_Generator():
 	'''
 	This function generates all the possible IP Addresses in the world
 	'''
-with open("ip_list.txt","w") as fobj:
-	try:
-		for i in range(0,256):
-			for j in range(0,256):
-				for k in range(0,256):
-					for l in range(0,256):
-						ip = str(i) + '.' + str(j) + '.' + str(k) + '.' + str(l)
+	with open("ip_list.txt","w") as fobj:
+		try:
+			for i in range(0,256):
+				for j in range(0,256):
+					for k in range(0,256):
+						for l in range(0,256):
+							ip = str(i) + '.' + str(j) + '.' + str(k) + '.' + str(l)
 						
-						fobj.write(ip + "\n")
-						fobj.flush()
+							fobj.write(ip + "\n")
+							fobj.flush()
 		
-	except:
-		fobj.close()
+		except:
+			fobj.close()
 
 ans = 'y'
 while ans.lower() == "y":
